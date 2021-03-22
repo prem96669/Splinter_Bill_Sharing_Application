@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainMenu.profile.profile"
+    tools:showIn="@layout/profile_fragment">
+    <!--    Reference:-->
+    <!--    /***************************************************************************************-->
+    <!--    *    Title: Free profile design with Collapsing Toolbar for android-->
+    <!--    *    Author: Kapil Mohan-->
+    <!--    *    Availability: Coding in Flow,  https://appsnipp.com/free-android-profile-design-with-source-code/-->
+    <!--    ***************************************************************************************/-->
+    <!--    profile layout-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/headerText"
+            android:layout_marginBottom="20dp"
+            android:text="@string/accountinfo" />
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+
+            <ImageView
+                android:id="@+id/nameImageView"
+                style="@style/profileDetailsImage"
+                android:src="@drawable/ic_insert_emoticon_black_24dp" />
+
+            <TextView
+                android:id="@+id/nameTextView"
+                style="@style/profileDetailsTextMain"
+                android:layout_toRightOf="@id/nameImageView"
+                android:text="Name" />
+
+            <TextView
+                android:id="@+id/tv_profileName"
+                style="@style/profileDetailsMiniText"
+                android:layout_toRightOf="@id/nameImageView"
+                android:text="@string/myname" />
+
+        </RelativeLayout>
+
+        <View style="@style/profileDetailsView" />
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+
+            <ImageView
+                android:id="@+id/mobileImageView"
+                style="@style/profileDetailsImage"
+                android:src="@drawable/ic_contact_phone_black_24dp" />
+
+            <TextView
+                style="@style/profileDetailsTextMain"
+                android:layout_toRightOf="@id/mobileImageView"
+                android:text="Mobile" />
+
+            <TextView
+                android:id="@+id/tv_profilePhoneNumber"
+                style="@style/profileDetailsMiniText"
+                android:layout_toRightOf="@id/mobileImageView"
+                android:text="+190298924555" />
+
+        </RelativeLayout>
+
+        <View style="@style/profileDetailsView" />
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+
+            <ImageView
+                android:id="@+id/emailImageView"
+                style="@style/profileDetailsImage"
+                android:src="@drawable/ic_contact_mail_black_24dp" />
+
+            <TextView
+                style="@style/profileDetailsTextMain"
+                android:layout_toRightOf="@id/emailImageView"
+                android:text="Email" />
+
+            <TextView
+                android:id="@+id/tv_profileEmail"
+                style="@style/profileDetailsMiniText"
+                android:layout_toRightOf="@id/emailImageView"
+                android:text="developer@splinter.com" />
+
+        </RelativeLayout>
+
+        <View style="@style/profileDetailsView" />
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+
+            <ImageView
+                android:id="@+id/dobImageView"
+                style="@style/profileDetailsImage"
+                android:src="@drawable/ic_password_icon" />
+
+            <TextView
+                style="@style/profileDetailsTextMain"
+                android:layout_toRightOf="@id/dobImageView"
+                android:text="Password" />
+
+            <TextView
+                style="@style/profileDetailsMiniText"
+                android:layout_toRightOf="@id/dobImageView"
+                android:inputType="textWebPassword"
+                android:text="Splinter@123" />
+
+        </RelativeLayout>
+
+        <View style="@style/profileDetailsView" />
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+
+            <ImageView
+                android:id="@+id/addressImageView"
+                style="@style/profileDetailsImage"
+                android:src="@drawable/ic_location_city_black_24dp" />
+
+            <TextView
+                style="@style/profileDetailsTextMain"
+                android:layout_toRightOf="@id/addressImageView"
+                android:text="Address" />
+
+            <TextView
+                style="@style/profileDetailsMiniText"
+                android:layout_toRightOf="@id/addressImageView"
+                android:text="1333 South park ST." />
+
+        </RelativeLayout>
+
+
+        <View style="@style/profileDetailsView" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

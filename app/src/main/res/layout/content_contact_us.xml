@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainMenu.contact_us.contact_us"
+    tools:showIn="@layout/contact_us_fragment">
+<!--    Contact us content layout-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+        
+        <TextView
+            style="@style/headerText"
+            android:layout_marginBottom="20dp"
+            android:text="Contact Information" />
+        
+        <RelativeLayout style="@style/profileDetailsLayout">
+            
+            <ImageView
+                android:id="@+id/nameImageView"
+                style="@style/profileDetailsImage"
+                android:src="@drawable/ic_location_city_black_24dp" />
+            
+            <TextView
+                android:id="@+id/nameTextView"
+                style="@style/profileDetailsTextMain"
+                android:layout_toRightOf="@id/nameImageView"
+                android:text="Organisation" />
+            
+            <TextView
+                style="@style/profileDetailsMiniText"
+                android:layout_toRightOf="@id/nameImageView"
+                android:text="SPLINTER" />
+        
+        </RelativeLayout>
+        
+        <View style="@style/profileDetailsView" />
+        
+        <RelativeLayout style="@style/profileDetailsLayout">
+            
+            <ImageView
+                android:id="@+id/mobileImageView"
+                style="@style/profileDetailsImage"
+                android:src="@drawable/ic_contact_phone_black_24dp" />
+            
+            <TextView
+                style="@style/profileDetailsTextMain"
+                android:layout_toRightOf="@id/mobileImageView"
+                android:text="Phone number" />
+            
+            <TextView
+                style="@style/profileDetailsMiniText"
+                android:layout_toRightOf="@id/mobileImageView"
+                android:text="+1902985778" />
+        
+        </RelativeLayout>
+        
+        <View style="@style/profileDetailsView" />
+        
+        <RelativeLayout style="@style/profileDetailsLayout">
+            
+            <ImageView
+                android:id="@+id/emailImageView"
+                style="@style/profileDetailsImage"
+                android:src="@drawable/ic_contact_mail_black_24dp" />
+            
+            <TextView
+                style="@style/profileDetailsTextMain"
+                android:layout_toRightOf="@id/emailImageView"
+                android:text="Email" />
+            
+            <TextView
+                style="@style/profileDetailsMiniText"
+                android:layout_toRightOf="@id/emailImageView"
+                android:text="contactus@splinter.com" />
+        
+        </RelativeLayout>
+        
+        <View style="@style/profileDetailsView" />
+        
+        <RelativeLayout style="@style/profileDetailsLayout">
+            
+            <ImageView
+                android:id="@+id/addressImageView"
+                style="@style/profileDetailsImage"
+                android:src="@drawable/ic_my_location_black_24dp" />
+            
+            <TextView
+                style="@style/profileDetailsTextMain"
+                android:layout_toRightOf="@id/addressImageView"
+                android:text="Address" />
+            
+            <TextView
+                style="@style/profileDetailsMiniText"
+                android:layout_toRightOf="@id/addressImageView"
+                android:text="1333 South park st, NS, Canada" />
+        
+        </RelativeLayout>
+        
+        <RelativeLayout style="@style/profileDetailsLayout">
+            
+            <Button
+                android:id="@+id/btn_help"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:text="Help" />
+        
+        </RelativeLayout>
+        
+        <View style="@style/profileDetailsView" />
+    
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
